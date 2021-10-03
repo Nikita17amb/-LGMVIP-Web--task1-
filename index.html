@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css">
+    <link rel="stylesheet" href="https://formden.com/static/cdn/font-awesome/4.4.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+   
+    
+    <title>Parking Lot</title>
+</head>
+
+<body>
+
+  <section class="main" id="main">
+
+       <nav class="navbar navbar-expand-lg navbar-dark bg-transparent" style="margin: 0;padding: 0;">
+           <aside class="container-fluid">
+
+                 <a class="navbar-brand" href="#" style="margin: 0;padding: 0;">
+                     <img class="logo" src="Image/LOGO.png" alt="" width="100%" height="70px" >
+                 </a>
+
+                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                   <span class="navbar-toggler-icon"></span>
+                 </button>
+
+           <aside class="collapse navbar-collapse" id="navbarSupportedContent">
+                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                     <li class="nav-item" style="margin-right: 10px;font-size: 18px; margin-left: 20px;">
+                         <a class="nav-link" href="#footer">ABOUT</a>
+                     </li>
+
+               <!--dropdown menu-->
+                 <li class="nav-item dropdown" style="margin-right: 10px;font-size: 18px;">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     OLD DATA
+                     </a>
+                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     <li><a  class="dropdown-item" href="#">2020</a></li>
+                     <li><a  class="dropdown-item" href="#">2019</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a  class="dropdown-item" href="#">2018</a></li>
+                     </ul>
+                 </li>
+
+
+                 <li class="nav-item" style="margin-right: 10px;font-size: 18px;">
+                     <a  class="nav-link" href="#work" tabindex="-1" aria-disabled="true">CONTACT US</a>
+                 </li>
+             </ul>
+
+             <!--searchbox-->
+             <form class="d-flex">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button  class="btn btn-danger" type="submit">Search</button>
+             </form>
+
+           </aside>
+         </aside>
+       </nav>
+   </section>
+
+   <section class="intro" >
+
+          <img src="Image/banner1.png" style="width: 100%;">
+
+   </section>
+
+
+    <div class="form-container">
+        <h2 class="text-center">Add car to the Parking Lot</h2>
+        <form class="w-50 mx-auto" id="entryForm">
+            <div class="form-group">
+                <label for="First Name">First Name
+                    <span class="asteriskField">
+                        *
+                       </span>
+                </label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="firstName" placeholder="First Name">
+            </div>
+            <div class="form-group">
+                <label for="Last Name">Last Name
+                  <span class="asteriskField">
+                      *
+                     </span>
+              </label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="lastName" placeholder="Last Name">
+            </div>
+            <div class="form-group">
+                <label for="mobileNumber">Mobile no. 
+                    <span class="asteriskField">
+                        *
+                       </span>
+                </label>
+                <input type="text" length=10 class="form-control rounded-0 shadow-sm" id="mobileNumber" placeholder="Mobile No.">
+            </div>
+            <div class="form-group">
+                <label for="licensePlate">License Plate
+                    <span class="asteriskField">
+                        *
+                       </span>
+                </label>
+                <input type="text" max lenght=7 class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="MH-31 K-1234...">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="entryDate">Entry Date
+                        <span class="asteriskField">
+                            *
+                           </span>
+                    </label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="entryDate">
+                </div>
+                <div class="col-6">
+                    <label for="exitDate">Exit Date
+                        <span class="asteriskField">
+                            *
+                           </span>
+                    </label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="exitDate">
+                </div>
+            </div>
+            <button type="submit" class="btn btn-danger mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Add Car</button>
+        </form>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+
+
+    <section class="carousel" id="parking-places">
+
+        <h2>Parking Places</h2>
+
+        <section class="carousel slide c_pictures" id="carouselExampleCaptions" data-bs-ride="carousel">
+              <section id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <aside class="carousel-inner">
+                  <aside class="carousel-item active" data-bs-interval="10000">
+                    <img src="Image/parking3.jpg" class="d-block w-100" alt="...">
+                    <aside class="carousel-caption d-none d-md-block">
+                      <h5>Ground Parking</h5>
+                    </aside>
+                  </aside>
+                  <aside class="carousel-item" data-bs-interval="2000">
+                    <img src="Image/parking 2.png" class="d-block w-100" alt="...">
+                    <aside class="carousel-caption d-none d-md-block">
+                      <h5>Ground Parking</h5>
+                    </aside>
+                  </aside>
+                  <aside class="carousel-item">
+                    <img src="Image/parking4.jpg" class="d-block w-100" alt="...">
+                    <aside class="carousel-caption d-none d-md-block">
+                      <h5>UnderGround Parking</h5>
+                    </aside>
+                  </aside>
+                </aside>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </section>
+              <section>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+              </section>
+        </section>
+      </section>
+
+
+
+    <section class="tab-info">
+        <h2 class="text-center mb-3">List of cars in the Parking Lot</h2>
+    <div class="table-container" >
+            <input type="text" class="w-100 mb-3" id="searchInput" placeholder="Search...">
+            <table class="table table-striped" id="parkingTable" style="overflow-y:auto; height: 200px; margin: 0;padding: 0;">
+                    <thead id="tableHead">
+                      <tr>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Mobile no.</th>
+                        <th scope="col">License Plate</th>
+                        <th scope="col">Entry Date</th>
+                        <th scope="col">Exit Date</th>
+                        <th scope="col">Actions</th>
+                      </tr>
+                    </thead>
+                    <tbody id="tableBody">
+
+                    </tbody>
+                  </table>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+    </div>
+    </section> 
+
+    <section class="work" id="work">
+        <img src="Image/work.png" alt="work">
+      </section>  
+
+      <section>
+        <section class="slide_t">
+          <marquee behavior="scroll" direction="left" scrollamount="12">
+              <i class="bi bi-bookmark-star-fill ico"></i>
+              Charges will be taken on using our parking services which will be included in the total bill of hotel.
+              <i class="bi bi-bookmark-star-fill ico"></i>
+              <i class="bi bi-bookmark-star-fill ico"></i>
+              For extra time...Extra charges will be taken.
+              <i class="bi bi-bookmark-star-fill ico"></i>
+              <i class="bi bi-bookmark-star-fill ico"></i>
+              For any complaint and query <b>Contact Us</b>
+              <i class="bi bi-bookmark-star-fill ico"></i>
+          </marquee>
+        </section>
+      </section>
+
+
+        <section class="footer" id="footer" widht=100%>
+
+              <!--footer starts from here-->
+              <footer class="footer" id="footer">
+              <aside class="container bottom_border">
+              <aside class="row">
+              <aside class=" col-sm-4 col-md col-sm-4  col-12 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Find us</h5>
+              <!--headin5_amrc-->
+              <p class="mb10"># 6/107, New No. 6/107/A, Sayyaji Rao Rd, beside Madhus Tyres, Bamboo Bazaar, Tilak Nagar, Mysuru, Karnataka 570021</p>
+              <p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
+              <p><i class="fa fa-phone"></i>  +91-9999878398  </p>
+              <p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+
+
+              </aside>
+
+
+              <aside class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+              <!--headin5_amrc-->
+              <ul class="footer_ul_amrc">
+              <li><a href="#main">Home</a></li>
+              <li><a href="#register-vehical">Register Vehicle</a></li>
+              <li><a href="#parking-places">Parking Places</a></li>
+              <li><a href="#Registered-Vehicals">Registered Vehicle</a></li>
+              <li><a href="#work">Work with us</a></li>
+              <li><a href="#footer">About</a></li>
+              </ul>
+              <!--footer_ul_amrc ends here-->
+              </aside>
+
+
+              <aside class=" col-sm-4 col-md  col-6 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Quick links</h5>
+              <!--headin5_amrc-->
+              <ul class="footer_ul_amrc">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Other Hotels</a></li>
+              <li><a href="#">Maps</a></li>
+              <li><a href="#">Staff</a></li>
+              <li><a href="#">Members</a></li>
+              <li><a href="#">Sponsors</a></li>
+              </ul>
+              <!--footer_ul_amrc ends here-->
+              </aside>
+
+
+              <aside class=" col-sm-4 col-md  col-12 col">
+              <h5 class="headin5_amrc col_white_amrc pt2">Follow us</h5>
+              <!--headin5_amrc ends here-->
+
+              <ul class="footer_ul2_amrc">
+              <li><a href="#"><i class="fab fa-facebook fleft padding-right"></i> </a><p>Follow Us on facebook...<a href="#">Facebook Profile</a></p></li>
+              <li><a href="#"><i class="fab fa-twitter fleft padding-right"></i> </a><p>Follow Us on twitter...<a href="#">Twitter Profile</a></p></li>
+              <li><a href="#"><i class="fab fa-instagram fleft padding-right"></i> </a><p>Follow Us on instagram...<a href="#">Instagram Profile</a></p></li>
+              </ul>
+              <!--footer_ul2_amrc ends here-->
+              </aside>
+              </aside>
+              </aside>
+
+
+              <aside class="container">
+              <ul class="foote_bottom_ul_amrc">
+              <li><a href="3main">Home</a></li>
+              <li><a href="#footer">About</a></li>
+              <li><a href="#work">Services</a></li>
+              <li><a href="#work">Pricing</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#work">Contact</a></li>
+              </ul>
+              <!--foote_bottom_ul_amrc ends here-->
+              <p class="text-center">Copyright @2021 | Designed With by <a href="#">WD-06-BS3(Smartknower)</a></p>
+
+              <ul class="social_footer_ul">
+              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+              </ul>
+              <!--social_footer_ul ends here-->
+              </aside>
+
+              </footer>
+
+        </section>
+
+          </section>
+        </section>
+
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/core.js"></script>
+</body>
+
+</html>
