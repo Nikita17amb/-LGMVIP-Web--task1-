@@ -1,0 +1,161 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    padding:0;
+    margin:0;
+    border:0
+}
+
+.main {
+    background: #9D0441;
+}
+
+.form-container {
+    background-image: url("Image/Copy\ of\ Untitled.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0%;
+}
+
+.form-container h2{
+    padding: 4% 0 3% 0;
+    font-weight: bold;
+    font-family: 'Lobster', cursive;
+}
+
+.form-container label{
+    font-weight: bold;
+}
+
+.asteriskField{
+    color: red;
+}
+
+#btnOne{
+    color:white;
+    
+}
+#btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;
+}
+
+.carousel {
+    background-image: url("Image/places.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: scroll;
+    width: 100%;
+}
+.carousel h2{
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 3%;
+    font-family: 'Lobster', cursive;
+}
+.c_pictures{
+    width: 720px;
+}
+
+@media screen and (max-width: 768px){
+    .c_pictures{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:769px){
+     .c_pictures{
+         margin-left: 280px;
+     }
+}
+
+@media screen and (min-width: 1270px){
+   .c_pictures{
+       margin-left: 400px;
+   }
+}
+
+.tab-info{
+    background-image: url("Image/table.png");
+    width: 100%;
+}
+
+.tab-info h2{
+    font-weight: bold;
+    padding-top: 2%;
+    font-family: 'Lobster', cursive;
+}
+
+.table-container {
+    padding-top: 6%;
+    width: 100%;
+    font-weight: bold;
+    padding-left: 2%;
+    padding-right: 2%;
+    background: transparent;
+    margin: 0;
+}
+
+#tableHead{
+    background-color:#9D0441;
+    color: white;
+}
+
+#searchInput{
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    border-bottom: 1px solid #ced4da;
+}
+#searchInput:hover,#searchInput:focus{
+    box-shadow: none;
+    outline:none;
+}
+
+.work img{
+    width: 100%;
+}
+
+.slide_t{
+    background-image: url("Image/Pastel Shapes Fun & Playful Linktree Background.png");
+    font-weight: bold;
+}
+
+
+/*footer*/
+.col_white_amrc { color:#FFF;}
+footer { width:100%; background-color:#263238; min-height:250px; padding:10px 0px 25px 0px ;}
+.pt2 { padding-top:40px ; margin-bottom:20px ;}
+footer p { font-size:13px; color:#CCC; padding-bottom:0px; margin-bottom:8px;}
+.mb10 { padding-bottom:15px ;}
+.footer_ul_amrc { margin:0px ; list-style-type:none ; font-size:14px; padding:0px 0px 10px 0px ; }
+.footer_ul_amrc li {padding:0px 0px 5px 0px;}
+.footer_ul_amrc li a{ color:#CCC;}
+.footer_ul_amrc li a:hover{ color:#fff; text-decoration:none;}
+.fleft { float:left;}
+.padding-right { padding-right:10px; }
+
+.footer_ul2_amrc {margin:0px; list-style-type:none; padding:0px;}
+.footer_ul2_amrc li p { display:table; }
+.footer_ul2_amrc li a:hover { text-decoration:none;}
+.footer_ul2_amrc li i { margin-top:5px;}
+
+.bottom_border { border-bottom:1px solid #323f45; padding-bottom:20px;}
+.foote_bottom_ul_amrc {
+    list-style-type:none;
+    padding:0px;
+    display:table;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+.foote_bottom_ul_amrc li { display:inline;}
+.foote_bottom_ul_amrc li a { color:#999; margin:0 12px;}
+
+.social_footer_ul { display:table; margin:15px auto 0 auto; list-style-type:none;  }
+.social_footer_ul li { padding-left:20px; padding-top:10px; float:left; }
+.social_footer_ul li a { color:#CCC; border:1px solid #CCC; padding:8px;border-radius:50%;}
+.social_footer_ul li i {  width:20px; height:20px; text-align:center;}
+
